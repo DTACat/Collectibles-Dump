@@ -1,0 +1,41 @@
+{
+            "type": 1,
+            "id": "1139323097930027068",
+            "sku_id": "1139323098370424932",
+            "title": "Boost Relic",
+            "description": "Legends say this could power an entire server...",
+            "accessibilityLabel": "Boost Relic. Legends say this could power an entire server...",
+            "animationType": 2,
+            "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-7/boost-relic/thumbnail.png",
+            "reducedMotionSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-7/boost-relic/reducedMotion.png",
+            "effects": [
+                {
+                    "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-20/boost-relic/intro.png",
+                    "loop": false,
+                    "height": 880,
+                    "width": 450,
+                    "duration": 2880,
+                    "start": 0,
+                    "loopDelay": 0,
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "zIndex": 100
+                },
+                {
+                    "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-20/boost-relic/loop.png",
+                    "loop": true,
+                    "height": 880,
+                    "width": 450,
+                    "duration": 2880,
+                    "start": 5760,
+                    "loopDelay": 5760,
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "zIndex": 101
+                }
+            ]
+        }
