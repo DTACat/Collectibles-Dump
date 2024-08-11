@@ -1,0 +1,38 @@
+{
+    "sku_id": "1139323103193878569",
+    "name": "Cyberspace",
+    "summary": "Witness the entire world in motion.",
+    "store_listing_id": "1139323103193878568",
+    "banner": "1149562891666731108",
+    "unpublished_at": null,
+    "styles": {
+        "background_colors": [
+            7546213,
+            1121600
+        ],
+        "button_colors": [
+            8734662,
+            12076481
+        ],
+        "confetti_colors": [
+            16069235,
+            9803263,
+            11008590,
+            3350191
+        ]
+    },
+    "items": [
+        {
+            "type": 1,
+            "id": "1139323098370424933",
+            "sku_id": "1139323103193878569"
+        }
+    ],
+    "type": 1,
+    "premium_type": 2,
+    "category_sku_id": "1144058340327047249",
+    "google_sku_ids": {
+        "5": "1139323103193878569_1259924496832266361",
+        "7": "1139323103193878569_1259924507188133918"
+    }
+}
