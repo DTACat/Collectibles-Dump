@@ -1,0 +1,41 @@
+{
+            "type": 1,
+            "id": "1139323098370424933",
+            "sku_id": "1139323103193878569",
+            "title": "Cyberspace",
+            "description": "Witness the entire world in motion.",
+            "accessibilityLabel": "Cyberspace. Witness the entire world in motion.",
+            "animationType": 2,
+            "thumbnailPreviewSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-7/cyberspace/thumbnail.png",
+            "reducedMotionSrc": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-7/cyberspace/reducedMotion.png",
+            "effects": [
+                {
+                    "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-20/cyberspace/intro.png",
+                    "loop": false,
+                    "height": 880,
+                    "width": 450,
+                    "duration": 2880,
+                    "start": 0,
+                    "loopDelay": 0,
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "zIndex": 100
+                },
+                {
+                    "src": "https://cdn.discordapp.com/assets/profile_effects/effects/2023-11-20/cyberspace/loop.png",
+                    "loop": true,
+                    "height": 880,
+                    "width": 450,
+                    "duration": 2880,
+                    "start": 5760,
+                    "loopDelay": 5760,
+                    "position": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "zIndex": 101
+                }
+            ]
+        }
