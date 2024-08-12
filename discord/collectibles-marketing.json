@@ -1,0 +1,39 @@
+{
+    "marketings": {
+        "0": {
+            "type": 0,
+            "version": 1,
+            "title": "VALORANT\u2019s Back",
+            "body": "Yoru, Viper, Cypher and a lil something extra. Come and see.",
+            "avatar": "https://cdn.discordapp.com/assets/collectibles/avatar/wumpus-with-headset.png",
+            "decorations": [
+                "a_da532f804b47f1681006c2996eb07b2a",
+                "a_b1efe77f379c6c9c6e47e6b6299d5a7d",
+                "a_62cd9d7c0031a7c1eb5ad5cc96992189"
+            ],
+            "dismissible_content": 426,
+            "ref_target_background": {
+                "style": {
+                    "resting": {
+                        "light": "linear-gradient(90deg, rgba(211, 211, 211, 0.00) 19.2%, rgba(211, 211, 211, 0.25) 61.36%, rgba(99, 5, 160, 0.50) 101.79%)",
+                        "dark": "linear-gradient(90deg, rgba(0, 0, 0, 0.00) 18.53%, rgba(0, 0, 0, 0.25) 61.03%, rgba(99, 5, 160, 0.50) 101.79%)"
+                    },
+                    "hovered": {
+                        "light": "linear-gradient(90deg, rgba(211, 211, 211, 0.00) 0%, rgba(211, 211, 211, 0.50) 52.53%, rgba(99, 5, 160, 0.80) 102.9%);",
+                        "dark": "linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.50) 52.64%, #6305A0 103.12%)"
+                    }
+                },
+                "asset": {
+                    "resting": {
+                        "light": null,
+                        "dark": null
+                    },
+                    "hovered": {
+                        "light": "https://cdn.discordapp.com/assets/collectibles/tab-background/2024-07-25/vine.png",
+                        "dark": "https://cdn.discordapp.com/assets/collectibles/tab-background/2024-07-25/vine.png"
+                    }
+                }
+            }
+        }
+    }
+}
