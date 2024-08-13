@@ -127,45 +127,7 @@
             background-image: linear-gradient(-90deg, rgb(32, 20, 107), rgb(5, 1, 0));
         }
         
-        div.bundles-hidden [class*="bundle"] {
-            display: none;
-        }
-        div.deco-hidden [class*="decos"] {
-            display: none;
-        }
-        div.effect-hidden [class*="effects"] {
-            display: none;
-        }
-        .unpub-hidden [class*="unpublished"] {
-            display: none;
-        }
-        .in-shop [class*="in-shop"] {
-            display: none;
-        }
-        .banners-hidden [class*="banner"] {
-            display: none;
-        }
-        .pphidden2 [class*="pphidden"] {
-            display: none;
-        }
-        .pprecenthidden2 [class*="pprecenthidden"] {
-            display: none;
-        }
-        .unobtainable-tag-hidden .unobtainable-tag {
-            display: none;
-        }
-        .unobtainable-tag-hidden .unobtainable-warning {
-            display: none;
-        }
-        .pending-hidden .pp-pending-card {
-            display: none;
-        }
-        [class="paper-beach"] {
-            display: none;
-        }
-        .paper-beach-show [class="paper-beach"] {
-            display: contents;
-        }
+        
         
         .sidebar {
             position: fixed;
@@ -1720,6 +1682,47 @@
         }
 
 
+        div.bundles-hidden [class*="bundle"] {
+            display: none;
+        }
+        div.deco-hidden [class*="decos"] {
+            display: none;
+        }
+        div.effect-hidden [class*="effects"] {
+            display: none;
+        }
+        .unpub-hidden [class*="unpublished"] {
+            display: none;
+        }
+        .in-shop [class*="in-shop"] {
+            display: none;
+        }
+        .banners-hidden [class*="banner"] {
+            display: none;
+        }
+        .pphidden2 [class*="pphidden"] {
+            display: none;
+        }
+        .pprecenthidden2 [class*="pprecenthidden"] {
+            display: none;
+        }
+        .unobtainable-tag-hidden .unobtainable-tag {
+            display: none;
+        }
+        .unobtainable-tag-hidden .unobtainable-warning {
+            display: none;
+        }
+        .pending-hidden .pp-pending-card {
+            display: none;
+        }
+        [class*="paper-beach-hidden"] {
+            display: none;
+        }
+        .paper-beach-show [class*="paper-beach-hidden"] {
+            display: block;
+        }
+
+
         .padding1 {
             padding: 1em;
         }
@@ -1902,7 +1905,7 @@
 
         <a href="https://github.com/DTACat/Collectibles/"><button title="Github" class="button server-button" id="github-button">Github</button></a>
 
-        <a class="sillywords sidebarwords">shop15</a>
+        <a class="sillywords sidebarwords">shop15.1</a>
 
     </div>
 
@@ -1913,30 +1916,32 @@
     
     <div class="itemlist" id="main-thing" style="margin-top: 200px;">
 
-        <div class="paper-beach" style="
-        --card-color1: rgb(67, 129, 255);
-        --card-color2: rgb(47, 94, 187);
-        --border-color: rgb(17, 18, 20);
+        <div class="profilesplus hidden" id="profilesplus" style="
+        --card-color1: rgb(135, 70, 255);
+        --card-color2: rgb(95, 36, 206);
+        --border-color: rgb(89, 0, 255);
         --button-color1: rgb(89, 102, 243);
         --button-color2: rgb(89, 102, 243);
         --button-color3: rgb(71, 81, 192);
         --button-color4: rgb(71, 81, 192);
         --button-text-color: rgb(255, 255, 255);
-        --banner-image: url(https://raw.githubusercontent.com/DTACat/Discord-Profiles-Plus/version2/custom-collectibles/assets/8.png);
-        --condensed-banner-image: url(https://raw.githubusercontent.com/DTACat/Discord-Profiles-Plus/version2/custom-collectibles/assets/5.png);">
-            <!-- Paper Beach -->
+        --banner-image: url( );">
+            <!-- Profiles Plus -->
 
-            <div class="item-condensed-banner banner">
+            <div class="item-condensed-banner banner" style="--condensed-banner-image: url(https://raw.githubusercontent.com/DTACat/Discord-Profiles-Plus/version2/custom-collectibles/assets/5.png);">
                 <img class="condensed-banner-logo-left" src="https://raw.githubusercontent.com/DTACat/Discord-Profiles-Plus/version2/custom-collectibles/assets/11.png">
                 <img class="condensed-banner-overlay-1" src="https://raw.githubusercontent.com/DTACat/Discord-Profiles-Plus/version2/custom-collectibles/assets/12.png">
                 <a class="sillywords banner-summary" style="color: black;"><p id="paper-beach-countdown"></p></a>
             </div>
-            <div class="item-banner banner">
+            <div class="item-banner banner paper-beach-hidden" style="--banner-image: url(https://raw.githubusercontent.com/DTACat/Discord-Profiles-Plus/version2/custom-collectibles/assets/8.png);">
                 <img class="banner-logo inv" src="https://raw.githubusercontent.com/DTACat/Discord-Profiles-Plus/version2/custom-collectibles/assets/1.png">
                 <a class="sillywords banner-summary" style="color: black;">Nothing better than wet and sandy paper.</a>
             </div>
 
-            <div class="in-shop" id="paper-beachitems">
+            <div class="in-shop paper-beach-hidden" id="paper-beachitems" style="
+            --card-color1: rgb(67, 129, 255);
+            --card-color2: rgb(47, 94, 187);
+            --border-color: rgb(36, 64, 121);">
                 <a class="sillywords itemtext1 bundles">Items</a>
                 <div class="paper-beachcollectiblesrow collectiblesrow">
 
@@ -1945,8 +1950,8 @@
                     <div class="bundle-card paper-beachbundles" style="
                     --deco-icon-false: url(' ');
                     --deco-icon-true: url(' ');
-                    --effect-thumbnail: url(' ');
-                    --effect-intro: url(' ');">
+                    --effect-thumbnail: url('https://s3.ezgif.com/tmp/ezgif-3-2f7bc0b3a4-png-split/frame_apngframe33.png');
+                    --effect-intro: url('https://s3.ezgif.com/tmp/ezgif-3-1cdf514e30.png');">
                         <div class="exclusive-tag" style="width: 50px;">
                             <a class="sillywords">NEW</a>
                         </div>
@@ -2000,8 +2005,8 @@
                     <!-- Effects -->
 
                     <div class="effect-card paper-beacheffects" style="
-                    --effect-thumbnail: url(' ');
-                    --effect-intro: url(' ');">
+                    --effect-thumbnail: url('https://s3.ezgif.com/tmp/ezgif-3-2f7bc0b3a4-png-split/frame_apngframe33.png');
+                    --effect-intro: url('https://s3.ezgif.com/tmp/ezgif-3-1cdf514e30.png');">
                         <div class="exclusive-tag" style="width: 50px;">
                             <a class="sillywords">NEW</a>
                         </div>
@@ -2026,20 +2031,6 @@
 
                 </div>
             </div>
-
-        </div>
-
-        <div class="profilesplus hidden" id="profilesplus" style="
-        --card-color1: rgb(135, 70, 255);
-        --card-color2: rgb(95, 36, 206);
-        --border-color: rgb(89, 0, 255);
-        --button-color1: rgb(89, 102, 243);
-        --button-color2: rgb(89, 102, 243);
-        --button-color3: rgb(71, 81, 192);
-        --button-color4: rgb(71, 81, 192);
-        --button-text-color: rgb(255, 255, 255);
-        --banner-image: url( );">
-            <!-- Profiles Plus -->
 
             <div class="item-banner banner profilesplusbanner">
                 <img class="profilesplusbannertext1" src="https://raw.githubusercontent.com/DTACat/Discord-Profiles-Plus/main/Assets/ProfilesPlusBannerLogo.png">
