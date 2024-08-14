@@ -1120,6 +1120,20 @@
             width: fit-content;
         }
 
+        .banner-summary-timer {
+            display: block;
+            margin-right: 70px;
+            margin-left: auto;
+            width: 230px;
+            margin-top: -220px;
+            height: 20px;
+            background-color: white;
+            color: black;
+            border-radius: 100px;
+            text-align: center;
+            scale: 1.5;
+        }
+
         .item-banner {
             display: block;
             margin-left: auto;
@@ -1879,6 +1893,10 @@
 
         <h3 class="sillywords sidebarwords">Profiles Plus</h3>
 
+        <div class="exclusive-tag paper-beach-hidden" style="width: 50px; scale: 1; margin-left: auto; margin-right: 0; rotate: 15deg;">
+            <a class="sillywords">NEW</a>
+        </div>
+
         <button title="Profiles Plus" class="button server-button" onclick="togglePPlus()" id="pplus-button">Show Category</button>
 
         <button title="Hide Pending" class="button server-button" onclick="togglePPlusPending()" id="pplus-hide-pending-button">Hide Pending</button>
@@ -1905,7 +1923,7 @@
 
         <a href="https://github.com/DTACat/Collectibles/"><button title="Github" class="button server-button" id="github-button">Github</button></a>
 
-        <a class="sillywords sidebarwords">shop15.1</a>
+        <a class="sillywords sidebarwords">shop15.2</a>
 
     </div>
 
@@ -1931,7 +1949,7 @@
             <div class="item-condensed-banner banner" style="--condensed-banner-image: url(https://raw.githubusercontent.com/DTACat/Discord-Profiles-Plus/version2/custom-collectibles/assets/5.png);">
                 <img class="condensed-banner-logo-left" src="https://raw.githubusercontent.com/DTACat/Discord-Profiles-Plus/version2/custom-collectibles/assets/11.png">
                 <img class="condensed-banner-overlay-1" src="https://raw.githubusercontent.com/DTACat/Discord-Profiles-Plus/version2/custom-collectibles/assets/12.png">
-                <a class="sillywords banner-summary" style="color: black;"><p id="paper-beach-countdown"></p></a>
+                <a class="sillywords banner-summary-timer paper-beach-hidden" style="color: black;"><p id="paper-beach-countdown"></p></a>
             </div>
             <div class="item-banner banner paper-beach-hidden" style="--banner-image: url(https://raw.githubusercontent.com/DTACat/Discord-Profiles-Plus/version2/custom-collectibles/assets/8.png);">
                 <img class="banner-logo inv" src="https://raw.githubusercontent.com/DTACat/Discord-Profiles-Plus/version2/custom-collectibles/assets/1.png">
@@ -1944,36 +1962,6 @@
             --border-color: rgb(36, 64, 121);">
                 <a class="sillywords itemtext1 bundles">Items</a>
                 <div class="paper-beachcollectiblesrow collectiblesrow">
-
-                    <!-- Bundles -->
-
-                    <div class="bundle-card paper-beachbundles" style="
-                    --deco-icon-false: url(' ');
-                    --deco-icon-true: url(' ');
-                    --effect-thumbnail: url('https://s3.ezgif.com/tmp/ezgif-3-2f7bc0b3a4-png-split/frame_apngframe33.png');
-                    --effect-intro: url('https://s3.ezgif.com/tmp/ezgif-3-1cdf514e30.png');">
-                        <div class="exclusive-tag" style="width: 50px;">
-                            <a class="sillywords">NEW</a>
-                        </div>
-                        <img class="bundle-effectimage">
-                        <img class="bundle-decoimage">
-                        <div class="bundle-content-holder">
-                            <div class="card-content">
-                                <a class="sillywords sku">Made By: TrellTrell</a>
-                                <h1 class="sillywords">Bundle</h1>
-                                <div class="description-holder">
-                                    <a class="sillywords fade">Bundle Includes: Deco Decoration & Effect Profile Effect</a>
-                                </div>
-                                <h1 class="sillywords fade">Pending...</h1>
-                                <h2 class="sillywords fade">September</h2>
-                                <div class="button-holder">
-                                    <button title="This item is being added to Profiles Plus, just wait." class="cardbutton cardbutton-locked">Pending...</button>
-                                    <button title="This item cannot be opened in the Shop" class="cardbutton cardbutton-locked closed">Unavailable For Item Type</button>
-                                    <button title="Coming Soon" class="cardbutton cardbutton-locked closed">Locked</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <!-- Deco -->
 
@@ -2005,8 +1993,8 @@
                     <!-- Effects -->
 
                     <div class="effect-card paper-beacheffects" style="
-                    --effect-thumbnail: url('https://s3.ezgif.com/tmp/ezgif-3-2f7bc0b3a4-png-split/frame_apngframe33.png');
-                    --effect-intro: url('https://s3.ezgif.com/tmp/ezgif-3-1cdf514e30.png');">
+                    --effect-thumbnail: url(' ');
+                    --effect-intro: url(' ');">
                         <div class="exclusive-tag" style="width: 50px;">
                             <a class="sillywords">NEW</a>
                         </div>
@@ -12188,7 +12176,7 @@
     <script>
 
         // Set the date we're counting down to
-        var countDownDate = new Date("Sep 1, 2024 00:00:00").getTime();
+        var countDownDate = new Date("Oct 1, 2024 00:00:00").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function() {
@@ -12201,13 +12189,9 @@
 
         // Time calculations for days, hours, minutes and seconds
         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         // Display the result in the element with id="demo"
-        document.getElementById("paper-beach-countdown").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
+        document.getElementById("paper-beach-countdown").innerHTML = days + " DAYS LEFT TO REQUEST";
 
         // If the count down is finished, write some text
         if (distance < 0) {
@@ -12579,7 +12563,7 @@
         }
 
         function paperBeachPPlus() {
-            let main = document.getElementById('main-thing');
+            let main = document.body;
             let button = document.getElementById('paper-beach-experiment-button');
 
             if (main.classList.contains('paper-beach-show')) {
