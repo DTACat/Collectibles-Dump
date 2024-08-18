@@ -1,0 +1,2262 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base target="_blank">
+    <title>Blog | Shop Archives</title>
+    <link rel="icon" href="https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/tabicon.png" type="image/x-icon"/>
+    <meta http-equiv="refresh" content="0; url=https://dtacat.github.io/Collectibles/not-meant-to-be-here.lmao" />
+    <meta name="twitter:site" content="Shop Archives Blog">
+    <meta name="twitter:title" content="Shop Archives Blog">
+    <meta name="twitter:description" content="Latest News: New custom 'Paper Beach' collectibles have been added to Shop Archives for you to request for Profiles Plus. Hurry before they're gone!">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:src" content="https://raw.githubusercontent.com/DTACat/Discord-Profiles-Plus/530cdfb1c9d9d38b42f00b6fac9bab01321a3140/custom-collectibles/assets/29.png">
+    <meta content="#FF007A" data-react-helmet="true" name="theme-color" />
+    <style>
+        body {
+            background-color: #313338;
+            color: white;
+            transition: background-color 0.4s ease-in-out;
+        }
+        .darkmode {
+            background-color: #313338;
+            /* or whatever */
+            color: white;
+        }
+        .background-light {
+            background-color: #ffffff;
+        }
+        .background-darker {
+            background-color: #171718;
+        }
+        .background-black {
+            background-color: #000000;
+        }
+        .background-theme-image {
+            background-image: url(https://raw.githubusercontent.com/DTACat/Collectibles/page/main/assets/bg_v4-85.jpg);
+            background-size: 100%;
+            background-blend-mode: multiply;
+        }
+        .background-cat {
+            background-color: #120a30;
+        }
+        .background-theme-red {
+            background-color: rgb(29, 0, 0);
+        }
+        .background-theme-blue {
+            background-color: rgb(0, 0, 29);
+        }
+
+        .unobtainable-tag {
+            display: block;
+            margin-bottom: -15px;
+            margin-top: -5px;
+            height: 20px;
+            margin-left: auto;
+            margin-right: 50px;
+            width: 120px;
+            background-color: white;
+            color: black;
+            border-radius: 100px;
+            scale: 1.5;
+        }
+        .exclusive-tag {
+            display: block;
+            margin-bottom: -15px;
+            margin-top: -5px;
+            height: 20px;
+            margin-left: auto;
+            margin-right: 50px;
+            width: 120px;
+            background-color: white;
+            color: black;
+            border-radius: 100px;
+            scale: 1.5;
+        }
+
+        .staff-popup {
+            width: 600px;
+            height: 200px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 80%);
+            position: fixed;
+            z-index: 100;
+            animation: popout-close-animation 10s forwards;
+        }
+
+        @keyframes popout-close-animation {
+	        0% {opacity: 100;}
+            90% {opacity: 100;}
+	        100% {opacity: 0;}
+        }
+
+        .dynamicbanners {
+            padding-top: 100px;
+        }
+        
+
+        .background-dynamic .arcade {
+            background-image: linear-gradient(-90deg, rgb(3, 2, 36), rgb(8, 1, 43));
+        }
+        .background-dynamic .retro {
+            background-image: linear-gradient(-90deg, rgb(223, 96, 255), rgb(128, 88, 253));
+        }
+        .background-dynamic .pirates {
+            background-image: linear-gradient(-90deg, rgb(42, 28, 25), rgb(123, 50, 28));
+        }
+        .background-dynamic .space {
+            background-image: linear-gradient(-90deg, rgb(6, 0, 59), rgb(49, 0, 53));
+        }
+        .background-dynamic .lofi {
+            background-image: linear-gradient(-90deg, rgb(97, 92, 255), rgb(223, 129, 184));
+        }
+        .background-dynamic .shy {
+            background-image: linear-gradient(-90deg, rgb(84, 33, 44), rgb(15, 26, 36));
+        }
+        .background-dynamic .springtoons {
+            background-image: linear-gradient(-90deg, rgb(255, 255, 255), rgb(113, 191, 254));
+        }
+        .background-dynamic .animev2 {
+            background-image: linear-gradient(-90deg, rgb(173, 255, 254), rgb(2, 61, 116));
+        }
+        .background-dynamic .element {
+            background-image: linear-gradient(-90deg, rgb(27, 27, 161), rgb(0, 22, 41));
+        }
+        .background-dynamic .lunar {
+            background-image: linear-gradient(-90deg, rgb(141, 0, 0), rgb(91, 0, 0));
+        }
+        .background-dynamic .cyber {
+            background-image: linear-gradient(-90deg, rgb(32, 20, 107), rgb(5, 1, 0));
+        }
+        
+        
+        
+        .sidebar {
+            position: fixed;
+            width: 25%;
+            backdrop-filter: blur(10px);
+        }
+        .left-sidebar {
+            position: fixed;
+            width: 430px;
+            height: 100%;
+            left: 0px;
+            top: 2.5em;
+            z-index: 10;
+            background-color: #1a1a1a;
+        }
+        .right-sidebar {
+            position: fixed;
+            width: 150px;
+            height: 100%;
+            text-align: center;
+            right: 0px;
+            top: 2.5em;
+            z-index: 10;
+            background-color: #1a1a1a;
+        }
+
+        .server-button {
+            cursor: pointer;
+            margin-top: 2px;
+            margin-bottom: 2px;
+            width: 10em;
+            height: 3em;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(89, 102, 243);
+            transition: background-color 0.2s ease-in-out;
+            color: white;
+        }
+        .server-button:hover {
+            background-color: rgb(71, 81, 192);
+        }
+        .server-button-blue {
+            background-color: rgb(5, 129, 75);
+            transition: background-color 0.2s ease-in-out;
+        }
+        .server-button-blue:hover {
+            background-color: rgb(7, 88, 53);
+        }
+        .bundle-discount {
+            color: rgb(0, 200, 117);
+        }
+
+        .show-button {
+            cursor: pointer;
+            width: 10em;
+            height: 3em;
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+        .darkmode1 {
+            background-color: #333538;
+        }
+        .trellteam {
+            right: 0em;
+            position: fixed;
+        }
+        .bannerad1 {
+            display: block;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1280px;
+            height: 200px;
+            border: none;
+            border-radius: 20px;
+            padding: 10px;
+            background-image: url(https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/Logo-2024-05-30T140921.927.png);
+            background-position: 0px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .dynamicbanner1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            width: 1480px;
+            height: 360px;
+            border: 2px solid rgb(16, 17, 19);
+            border-radius: 20px;
+            padding: 10px;
+            background-image: url(https://raw.githubusercontent.com/DTACat/Collectibles/main/Backup-Assets/Dynamic-Banner/1cf2660341dc3fb15836.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .condensedleft .bundlesbanner {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1700px;
+            height: 205px;
+            border: none;
+            border-radius: 30px;
+            padding: 10px;
+            background-image: url(https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/BundlesBannerLeft.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        .condensedright .bundlesbanner {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1700px;
+            height: 205px;
+            border: none;
+            border-radius: 30px;
+            padding: 10px;
+            background-image: url(https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/BundlesBannerRight.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        .bundlesbanner {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1280px;
+            height: 270px;
+            border: 2px solid rgb(16, 17, 19);
+            border-radius: 50px;
+            padding: 10px;
+            background-image: url(https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/BundlesBackground.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        
+
+
+        .itemlist {
+            width: 100%;
+        }
+        .itemlist {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+        .banneradprofile {
+            display: block;
+            margin-left: -20px;
+            margin-top: -140px;
+            width: 550px;
+        }
+
+        .dynamicbanner1profile1 {
+            display: block;
+            margin-left: auto;
+            margin-right: -10px;
+            margin-top: -122px;
+            width: 550px;
+        }
+        .dynamicbanner3profile1 {
+            display: block;
+            margin-left: auto;
+            margin-right: -10px;
+            margin-top: -122px;
+            width: 550px;
+        }
+
+
+        .dynamicbanner1text1 {
+            display: block;
+            margin-right: auto;
+            padding: 2%;
+            margin-top: -380px;
+        }
+        .dynamicbanner2text1 {
+            display: block;
+            margin-right: auto;
+            padding: 2%;
+            margin-top: -10px;
+        }
+        .dynamicbanner3text1 {
+            display: block;
+            margin-right: auto;
+            padding: 2%;
+            margin-top: -380px;
+        }
+        .dynamicbanner4text1 {
+            display: block;
+            margin-right: auto;
+            padding: 2%;
+            margin-top: -10px;
+        }
+
+
+        .condensedleft .bundlesbannertext1 {
+            margin-left: 0;
+            margin-top: -55px;
+            scale: 80%;
+        }
+        .condensedright .bundlesbannertext1 {
+            margin-right: 0;
+            margin-top: -55px;
+            scale: 80%;
+        }
+        .bundlesbannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5.5%;
+        }
+        
+        .element {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .tidebannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 4%;
+        }
+
+        .condensedleft .arcadebannertext1 {
+            margin-left: 0;
+            margin-top: -60px;
+            scale: 80%;
+        }
+        .condensedright .arcadebannertext1 {
+            margin-right: 0;
+            margin-top: -60px;
+            scale: 80%;
+        }
+        .arcadebannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 7%;
+        }
+        
+        .condensedleft .retrobannertext1 {
+            margin-left: 0;
+            margin-top: -35px;
+            scale: 80%;
+        }
+        .condensedright .retrobannertext1 {
+            margin-right: 0;
+            margin-top: -35px;
+            scale: 80%;
+        }
+        .retrobannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 4%;
+        }
+
+        .condensedleft .piratesbannertext1 {
+            margin-left: 0;
+            margin-top: -35px;
+            scale: 80%;
+        }
+        .condensedright .piratesbannertext1 {
+            margin-right: 0;
+            margin-top: -35px;
+            scale: 80%;
+        }
+        .piratesbannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 3%;
+        }
+
+        .condensedleft .galaxybannertext1 {
+            margin-left: 0;
+            margin-top: -50px;
+            scale: 100%;
+        }
+        .condensedright .galaxybannertext1 {
+            margin-right: 0;
+            margin-top: -50px;
+            scale: 100%;
+        }
+        .galaxybannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 7%;
+        }
+
+        .condensedleft .lofibannertext1 {
+            margin-left: 0;
+            margin-top: -35px;
+            scale: 100%;
+        }
+        .condensedright .lofibannertext1 {
+            margin-right: 0;
+            margin-top: -35px;
+            scale: 100%;
+        }
+        .lofibannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 6%;
+        }
+
+        .shybannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 8%;
+        }
+        .springtoonsbannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 7.5%;
+        }
+        .animev2bannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 4%;
+        }
+        .elementbannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 7%;
+        }
+        .lunarbannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 8%;
+        }
+        .cyberbannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 7%;
+        }
+        .monsterbannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5%;
+        }
+        .winterbannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 3%;
+        }
+        .halloweenbannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5%;
+        }
+        .fallbannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5%;
+        }
+        .fantasybannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5%;
+        }
+        .animebannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5%;
+        }
+        .breakfastbannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 5%;
+        }
+        .disxbannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 8%;
+        }
+        .festivebannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0%;
+        }
+        .profilesplusbannertext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
+            height: 200px;
+            padding: 2%;
+        }
+
+
+        .dynamicbanner1text2 {
+            display: block;
+            margin-left: 50px;
+            width: fit-content;
+            margin-top: -30px;
+            color: black;
+        }
+        .dynamicbanner2text2 {
+            display: block;
+            margin-left: 50px;
+            width: fit-content;
+            margin-top: -30px;
+        }
+        .dynamicbanner3text2 {
+            display: block;
+            margin-left: 50px;
+            width: fit-content;
+            margin-top: -30px;
+        }
+        .dynamicbanner4text2 {
+            display: block;
+            margin-left: 50px;
+            width: fit-content;
+            margin-top: -30px;
+        }
+
+        .stormbannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -30px;
+        }
+
+        .robertbannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -30px;
+            color: black;
+        }
+
+        .tidebannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -30px;
+        }
+
+        .condensedleft .arcadebannertext2 {
+            display: none;
+        }
+        .condensedright .arcadebannertext2 {
+            display: none;
+        }
+        .arcadebannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -50px;
+        }
+
+        .condensedleft .retrobannertext2 {
+            display: none;
+        }
+        .condensedright .retrobannertext2 {
+            display: none;
+        }
+        .retrobannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -30px;
+        }
+
+        .condensedleft .piratesbannertext2 {
+            display: none;
+        }
+        .condensedright .piratesbannertext2 {
+            display: none;
+        }
+        .piratesbannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -30px;
+        }
+
+        .condensedleft .galaxybannertext2 {
+            display: none;
+        }
+        .condensedright .galaxybannertext2 {
+            display: none;
+        }
+        .galaxybannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -30px;
+        }
+
+        .condensedleft .lofibannertext2 {
+            display: none;
+        }
+        .condensedright .lofibannertext2 {
+            display: none;
+        }
+        .lofibannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -40px;
+        }
+        .shybannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -60px;
+        }
+        .springtoonsbannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -50px;
+            color: black;
+        }
+        .animev2bannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -30px;
+            color: black;
+        }
+        .elementbannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -80px;
+        }
+        .lunarbannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -80px;
+        }
+        .cyberbannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -80px;
+        }
+        .monsterbannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -40px;
+        }
+        .winterbannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -40px;
+        }
+        .halloweenbannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -40px;
+        }
+        .fallbannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -40px;
+        }
+        .fantasybannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -40px;
+        }
+        .animebannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -40px;
+        }
+        .breakfastbannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -40px;
+        }
+        .disxbannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -50px;
+        }
+        .miscellaneousbannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: 200px;
+        }
+        .ethbirthdaybannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: 200px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+        }
+        .festivebannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: 10px;
+        }
+        .summerbannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: 200px;
+        }
+        .digitalbannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: 200px;
+        }
+        .archivebannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: 200px;
+        }
+        .profilesplusbannertext2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+            margin-top: -20px;
+        }
+
+
+        .dynamicbutton1 {
+            display: block;
+            margin-left: 50px;
+            margin-top: 20px;
+            width: 10em;
+            padding: 1em;
+            border-radius: 3px;
+            border-color: rgb(89, 102, 243);
+            background: linear-gradient(90deg, rgb(89, 102, 243), rgb(89, 102, 243));
+            cursor: pointer;
+            color: white;
+            font-size: large;
+        }
+
+
+        .itemtext1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80em
+        }
+        .button1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            width: 25em;
+            padding: 1em;
+            border-radius: 3px;
+            border-color: rgb(89, 102, 243);
+            background: linear-gradient(90deg, rgb(89, 102, 243), rgb(89, 102, 243));
+            cursor: pointer;
+            color: white;
+        }
+        .goldbutton1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            width: 25em;
+            padding: 1em;
+            border-radius: 3px;
+            border-color: rgb(237, 213, 80);
+            background: linear-gradient(90deg, rgb(237, 213, 80), rgb(251, 127, 50)); 
+            cursor: pointer;
+            color: black;
+        }
+        .adbutton {
+            display: block;
+            margin-left: auto;
+            margin-top: 85px;
+            width: 20em;
+            padding: 1em;
+            border-radius: 3px;
+            border-color: rgb(237, 213, 80);
+            background: linear-gradient(90deg, rgb(237, 213, 80), rgb(251, 127, 50)); 
+            cursor: pointer;
+            color: black;
+        }
+
+        .bundlesbutton1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            width: 25em;
+            padding: 1em;
+            border-radius: 3px;
+            border: none;
+            background: linear-gradient(90deg, rgb(89, 102, 243), rgb(89, 102, 243));
+            cursor: pointer;
+            color: white;
+        }
+        .bundlesinfobutton1 {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            width: 21em;
+            padding: 1em;
+            border-radius: 3px;
+            border: none;
+            background: linear-gradient(90deg, rgb(89, 102, 243), rgb(89, 102, 243));
+            cursor: pointer;
+            color: white;
+        }
+        .bundlesgiftbutton1 {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            width: 4em;
+            padding: 1em;
+            border-radius: 3px;
+            border: none;
+            background: linear-gradient(90deg, rgb(89, 102, 243), rgb(89, 102, 243));
+            cursor: pointer;
+            color: white;
+        }
+
+        .greenbutton1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            width: 25em;
+            padding: 1em;
+            border-radius: 3px;
+            border-color: rgb(31, 95, 29);
+            background-color: rgb(24, 119, 24);
+            cursor: pointer;
+            color: white;
+        }
+        .darkgreenbutton1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            width: 25em;
+            padding: 1em;
+            border-radius: 3px;
+            border-color: rgb(17, 56, 16);
+            background-color: rgb(12, 53, 29);
+            cursor: pointer;
+            color: white;
+        }
+        .noclick {
+            cursor: not-allowed;
+        }
+        
+
+        
+        
+
+
+        #elementdeco {
+            text-align: unset;
+        }
+
+        .bundles_ {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 430px;
+            height: 600px;
+            border: 2px solid rgb(16, 17, 19);
+            border-radius: 50px;
+            background-image: linear-gradient(rgb(16, 17, 19), rgb(16, 17, 19));
+            padding: 10px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin-top: 10px;
+        }
+
+        .collectiblesrow {
+            position: relative;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+        }
+
+        .bundlerow {
+            position: relative;
+            text-align: center;
+        }
+
+        .decorow {
+            position: relative;
+            text-align: center;
+        }
+
+        .effectrow {
+            position: relative;
+            text-align: center;
+        }
+
+
+        .price {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 10em;
+        }
+
+
+        .banner {
+            margin-top: 50px;
+        }
+        div.loading {
+            background: #000; 
+            width: 100%;
+            text-align: center;
+            height: auto; 
+            z-index: 100;
+            top: 0; 
+            left: 0; 
+            position: fixed; 
+        }
+        .loadtext {
+            position: relative;
+            text-align: center;
+        }
+        .newtext {
+            width: 50px;
+            height: 20px;
+            background-color: blue;
+            scale: 150%;
+            border-radius: 50px;
+            text-align: center;
+            margin-left: 190px;
+        }
+
+        .sillywords {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        * {
+            text-decoration: none;
+        }
+
+        /* Arcade */
+        .condensedleft .arcadebanner {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1700px;
+            height: 205px;
+            border: none;
+            border-radius: 30px;
+            padding: 10px;
+            background-image: url(https://raw.githubusercontent.com/DTACat/Collectibles/main/Archive/6e05aadeadd02eb63015.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        .condensedright .arcadebanner {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1700px;
+            height: 205px;
+            border: none;
+            border-radius: 30px;
+            padding: 10px;
+            background-image: url(https://raw.githubusercontent.com/DTACat/Collectibles/main/Archive/9015980c33a1df37bc7a.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+
+        
+        .background-dynamic [class*="decos"]:has([class*="decoimage"]) {
+            border: 2px solid rgb(16, 17, 19);
+            background-image: linear-gradient(rgb(16, 17, 19), rgb(16, 17, 19));
+        }
+        .background-dynamic [class*="effects"]:has([class*="effectimage"]) {
+            border: 2px solid rgb(16, 17, 19);
+            background-image: linear-gradient(rgb(16, 17, 19), rgb(16, 17, 19));
+        }
+        .background-dynamic [class*="button-holder"] [class*="button1"] {
+            border-color: rgb(89, 102, 243);
+            background: linear-gradient(90deg, rgb(89, 102, 243), rgb(89, 102, 243));
+            color: white;
+        }
+
+        .banner-logo {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 230px;
+        }
+
+        .condensed-banner-logo-left {
+            display: block;
+            margin-left: 50px;
+            margin-right: auto;
+            height: 180px;
+            padding: 10px;
+            animation: banner-logo-rotate 10s infinite;
+        }
+
+        .condensed-banner-logo-right-1 {
+            display: block;
+            margin-left: auto;
+            margin-right: 0px;
+            height: 100px;
+            padding: 60px;
+        }
+
+        @keyframes banner-logo-rotate {
+	        0% {rotate: -5deg;}
+	        50% {rotate: 5deg;}
+            100% {rotate: -5deg;}
+        }
+
+        .condensed-banner-overlay-1 {
+            margin-top: -330px;
+            margin-left: 400px;
+            height: 350px;
+            width: auto;
+        }
+
+        .condensed-banner-overlay-2 {
+            margin-top: -330px;
+            margin-left: 600px;
+            height: 350px;
+            width: auto;
+        }
+
+        .banner-summary {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: fit-content;
+        }
+
+        .banner-summary-timer {
+            display: block;
+            margin-right: 70px;
+            margin-left: auto;
+            width: 230px;
+            margin-top: -220px;
+            height: 20px;
+            background-color: white;
+            color: black;
+            border-radius: 100px;
+            text-align: center;
+            scale: 1.5;
+        }
+
+        .item-banner {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1280px;
+            height: 270px;
+            border: 2px solid var(--border-color);
+            border-radius: 50px;
+            padding: 10px;
+            background-image: var(--banner-image);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        .item-condensed-banner {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1700px;
+            height: 220px;
+            border: none;
+            border-radius: 20px;
+            background-image: var(--condensed-banner-image);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .item-condensed-banner .banner-summary {
+            display: none;
+        }
+
+        /* Bundles */
+
+        .bundle-card {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 500px;
+            height: 740px;
+            border: 2px solid var(--border-color);
+            border-radius: 50px;
+            background-image: linear-gradient(var(--card-color1), var(--card-color2));
+            padding: 10px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin-top: 10px;
+        }
+        .no-card-theme .bundle-card {
+            border: 2px solid rgb(30, 31, 34);
+            background-image: linear-gradient(rgb(17, 18, 20), rgb(17, 18, 20));
+        }
+        .open .bundle-card {
+            width: 600px;
+            height: 1530px;
+        }
+
+        .bundle-effectimage {
+            display: block;
+            margin-left: 30px;
+            margin-top: 10px;
+            scale: 80%;
+            width: 300px;
+            height: 410px;
+            padding: 0px;
+            border-radius: 20px;
+            content: url(https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/empty.png);
+            background-image: var(--effect-thumbnail), url(https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/352db5d6852138aabc88.png);
+            background-size: 100%;
+            background-position: top center;
+            background-repeat: no-repeat;
+            transform: rotate(-10deg);
+        }
+        .bundle-card:hover .bundle-effectimage {
+            background-image: var(--effect-intro), url(https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/352db5d6852138aabc88.png);
+        }
+        .open .bundle-effectimage {
+            background-image: var(--effect-intro), url(https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/352db5d6852138aabc88.png);
+        }
+
+        .bundle-decoimage {
+            display: block;
+            margin-left: auto;
+            margin-top: -340px;
+            margin-bottom: 70px;
+            scale: 90%;
+            width: 250px;
+            height: 250px;
+            padding: 10px;
+            content: var(--deco-icon-false);
+            background-position: center;
+            background-image: url(https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/ff84fa219ab7e996ec26.png);
+	        background-size: 77%;
+	        background-repeat: no-repeat;
+            transform: rotate(10deg);
+        }
+        .bundle-card:hover .bundle-decoimage {
+            content: var(--deco-icon-true);
+        }
+        .open .bundle-decoimage {
+            content: var(--deco-icon-true);
+        }
+        
+
+        .bundle-content-holder {
+            background-color: rgba(0, 0, 0, 60%);
+            width: 520px;
+            margin-left: -10px;
+            height: 330px;
+            position: relative;
+            border-radius: 0px 0px 50px 50px;
+        }
+        .no-card-theme .bundle-content-holder {
+            background-color: rgba(30, 31, 34, 100%);
+        }
+        .open .bundle-content-holder {
+            width: 620px;
+            height: 1120px;
+        }
+        
+        .card-content {
+            padding: 10px;
+        }
+
+        .bundle-card .button-holder {
+            opacity: 0%;
+            margin-top: -149px;
+            transition: opacity 0.2s ease-in-out;
+        }
+        .bundle-card:hover .button-holder {
+            opacity: 100%;
+            margin-top: -40px;
+        }
+
+        .bundle-card .fade {
+            opacity: 100%;
+            transition: opacity 0.2s ease-in-out;
+        }
+        .bundle-card:hover .fade {
+            opacity: 0%;
+            display: none;
+        }
+
+        /* ^ Bundles */
+
+        /* Deco */
+
+        .deco-card {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 500px;
+            height: 740px;
+            border: 2px solid var(--border-color);
+            border-radius: 50px;
+            background-image: linear-gradient(var(--card-color1), var(--card-color2));
+            padding: 10px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin-top: 10px;
+        }
+        .no-card-theme .deco-card {
+            border: 2px solid rgb(30, 31, 34);
+            background-image: linear-gradient(rgb(17, 18, 20), rgb(17, 18, 20));
+        }
+        .open .deco-card {
+            width: 600px;
+            height: 1530px;
+        }
+
+        .pplusquickcoloursshown .pp-pending-card {
+            box-shadow: 0 0 5px 5px yellow;
+        }
+        .pplusquickcoloursshown .pp-available-card {
+            box-shadow: 0 0 5px 5px lime;
+        }
+
+        .decoimage {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            width: 300px;
+            height: 300px;
+            padding: 10px;
+            content: var(--deco-icon-false);
+            background-position: center;
+            background-image: url(https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/6d8f0708e196aaad2550.png);
+	        background-size: 77%;
+	        background-repeat: no-repeat;
+        }
+        .open .decoimage {
+            content: var(--deco-icon-true);
+        }
+        .content-holder {
+            background-color: rgba(0, 0, 0, 60%);
+            width: 520px;
+            margin-left: -10px;
+            height: 330px;
+            position: relative;
+            border-radius: 0px 0px 50px 50px;
+        }
+        .no-card-theme .content-holder {
+            background-color: rgba(30, 31, 34, 100%);
+        }
+        .open .content-holder {
+            width: 620px;
+            height: 1120px;
+        }
+
+        .description-holder {
+            height: 50px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .card-content {
+            padding: 10px;
+        }
+        .deco-card:hover .decoimage {
+            content: var(--deco-icon-true);
+        }
+
+        .deco-card .button-holder {
+            opacity: 0%;
+            margin-top: -148px;
+            transition: opacity 0.2s ease-in-out;
+        }
+        .deco-card:hover .button-holder {
+            opacity: 100%;
+            margin-top: -40px;
+        }
+
+        .deco-card .fade {
+            opacity: 100%;
+            transition: opacity 0.2s ease-in-out;
+        }
+        .deco-card:hover .fade {
+            opacity: 0%;
+            display: none;
+        }
+
+        /* ^ Deco */
+
+        /* Effects */
+
+        .effect-card {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 500px;
+            height: 740px;
+            border: 2px solid var(--border-color);
+            border-radius: 50px;
+            background-image: linear-gradient(var(--card-color1), var(--card-color2));
+            padding: 10px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            margin-top: 10px;
+        }
+        .no-card-theme .effect-card {
+            border: 2px solid rgb(30, 31, 34);
+            background-image: linear-gradient(rgb(17, 18, 20), rgb(17, 18, 20));
+        }
+        .open .effect-card {
+            width: 600px;
+            height: 1530px;
+        }
+
+        .effectimage {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 70px;
+            scale: 120%;
+            width: 300px;
+            height: 470px;
+            padding: 0px;
+            border-radius: 20px 20px 20px 20px;
+            content: url(https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/empty.png);
+            background-image: var(--effect-thumbnail), url(https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/352db5d6852138aabc88.png);
+            background-size: 100%;
+            background-position: top center;
+            background-repeat: no-repeat;
+        }
+        .effect-card:hover .effectimage {
+            background-image: var(--effect-intro), url(https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/352db5d6852138aabc88.png);
+        }
+        .open .effectimage {
+            background-image: var(--effect-intro), url(https://raw.githubusercontent.com/DTACat/Collectibles/main/Images/352db5d6852138aabc88.png);
+        }
+
+        .effect-content-holder {
+            background-color: rgba(0, 0, 0, 60%);
+            width: 520px;
+            margin-left: -10px;
+            margin-top: -120px;
+            height: 330px;
+            position: relative;
+            border-radius: 0px 0px 50px 50px;
+            backdrop-filter: blur(10px);
+        }
+        .no-card-theme .effect-content-holder {
+            background-color: rgba(30, 31, 34, 60%);
+            backdrop-filter: blur(10px);
+        }
+        .card-content {
+            padding: 10px;
+        }
+        .open .effect-content-holder {
+            width: 620px;
+            height: 1120px;
+        }
+
+        .effect-card .button-holder {
+            opacity: 0%;
+            margin-top: -148px;
+            transition: opacity 0.2s ease-in-out;
+        }
+        .effect-card:hover .button-holder {
+            opacity: 100%;
+            margin-top: -40px;
+        }
+
+        .effect-card .fade {
+            opacity: 100%;
+            transition: opacity 0.2s ease-in-out;
+        }
+        .effect-card:hover .fade {
+            opacity: 0%;
+            display: none;
+        }
+
+        /* ^ Effects */
+
+        .open [class*="card"] .fade {
+            opacity: 100%;
+            display: block;
+        }
+        .open .button-holder {
+            opacity: 100%;
+            margin-top: 0px;
+        }
+        .open [class*="card"] .closed {
+            display: none;
+        }
+
+        .open-text {
+            display: none;
+        }
+        .open .open-text {
+            display: block;
+        }
+
+        .closed-text {
+            display: block;
+        }
+        .open .closed-text {
+            display: none;
+        }
+
+        .cardbutton {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            width: 85%;
+            padding: 1em;
+            border: none;
+            border-radius: 3px;
+            background-image: linear-gradient(90deg, var(--button-color1), var(--button-color2));
+            color: var(--button-text-color);
+            cursor: pointer;
+        }
+        .no-card-theme .cardbutton {
+            background-image: linear-gradient(90deg, rgb(89, 102, 243), rgb(89, 102, 243));
+            color: rgb(255, 255, 255);
+        }
+        
+        .cardbutton:hover {
+            background-image: linear-gradient(90deg, var(--button-color3), var(--button-color4));
+        }
+        .no-card-theme .cardbutton:hover {
+            background-image: linear-gradient(90deg, rgb(71, 81, 192), rgb(71, 81, 192));
+            color: rgb(255, 255, 255);
+        }
+
+        .cardbutton-locked {
+            background-image: linear-gradient(90deg, var(--button-color3), var(--button-color4));
+            cursor: not-allowed;
+        }
+        .no-card-theme .cardbutton-locked {
+            background-image: linear-gradient(90deg, rgb(71, 81, 192), rgb(71, 81, 192));
+            color: rgb(255, 255, 255);
+        }
+
+        .loading-dots .dots {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+            height: auto;
+            scale: 80%;
+        }
+
+        .link {
+            color: #559eff;
+            text-decoration: underline;
+            transition: color 0.1s ease-in-out;
+        }
+        .link:hover {
+            color: #8abdff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+
+        [id*="theme-button"]:not([id*="card"]) {
+            width: 70px;
+            height: 70px;
+            border-radius: 20px;
+            transition: border 0.2s ease-in-out;
+        }
+
+        [id="light-theme-button"] {
+            background-color: white;
+            border: 5px solid rgb(89, 102, 243);
+        }
+        [id="light-theme-button"]:hover {
+            background-color: white;
+            border: 5px solid rgb(71, 81, 192);
+        }
+        .background-light [id="light-theme-button"] {
+            border: 5px solid rgb(5, 129, 75);
+        }
+        .background-light [id="light-theme-button"]:hover {
+            border: 5px solid rgb(7, 88, 53);
+        }
+
+        [id="dark-theme-button"] {
+            background-color: #313338;
+            border: 5px solid rgb(89, 102, 243);
+        }
+        [id="dark-theme-button"]:hover {
+            background-color: #313338;
+            border: 5px solid rgb(71, 81, 192);
+        }
+        .darkmode [id="dark-theme-button"] {
+            border: 5px solid rgb(5, 129, 75);
+        }
+        .darkmode [id="dark-theme-button"]:hover {
+            border: 5px solid rgb(7, 88, 53);
+        }
+
+        [id="darker-theme-button"] {
+            background-color: #171718;
+            border: 5px solid rgb(89, 102, 243);
+        }
+        [id="darker-theme-button"]:hover {
+            background-color: #171718;
+            border: 5px solid rgb(71, 81, 192);
+        }
+        .background-darker [id="darker-theme-button"] {
+            border: 5px solid rgb(5, 129, 75);
+        }
+        .background-darker [id="darker-theme-button"]:hover {
+            border: 5px solid rgb(7, 88, 53);
+        }
+
+        [id="black-theme-button"] {
+            background-color: #000000;
+            border: 5px solid rgb(89, 102, 243);
+        }
+        [id="black-theme-button"]:hover {
+            background-color: #000000;
+            border: 5px solid rgb(71, 81, 192);
+        }
+        .background-black [id="black-theme-button"] {
+            border: 5px solid rgb(5, 129, 75);
+        }
+        .background-black [id="black-theme-button"]:hover {
+            border: 5px solid rgb(7, 88, 53);
+        }
+
+        [id="red-theme-button"] {
+            background-color: #410000;
+            border: 5px solid rgb(89, 102, 243);
+        }
+        [id="red-theme-button"]:hover {
+            background-color: #410000;
+            border: 5px solid rgb(71, 81, 192);
+        }
+        .background-theme-red [id="red-theme-button"] {
+            border: 5px solid rgb(5, 129, 75);
+        }
+        .background-theme-red [id="red-theme-button"]:hover {
+            border: 5px solid rgb(7, 88, 53);
+        }
+
+        [id="blue-theme-button"] {
+            background-color: #010041;
+            border: 5px solid rgb(89, 102, 243);
+        }
+        [id="blue-theme-button"]:hover {
+            background-color: #010041;
+            border: 5px solid rgb(71, 81, 192);
+        }
+        .background-theme-blue [id="blue-theme-button"] {
+            border: 5px solid rgb(5, 129, 75);
+        }
+        .background-theme-blue [id="blue-theme-button"]:hover {
+            border: 5px solid rgb(7, 88, 53);
+        }
+
+        [id="dynamic-theme-button"] {
+            background-image: linear-gradient(90deg, rgb(81, 192, 71), rgb(71, 81, 192));
+            border: 5px solid rgb(89, 102, 243);
+        }
+        [id="dynamic-theme-button"]:hover {
+            background-image: linear-gradient(90deg, rgb(81, 192, 71), rgb(71, 81, 192));
+            border: 5px solid rgb(71, 81, 192);
+        }
+        .background-dynamic [id="dynamic-theme-button"] {
+            border: 5px solid rgb(5, 129, 75);
+        }
+        .background-dynamic [id="dynamic-theme-button"]:hover {
+            border: 5px solid rgb(7, 88, 53);
+        }
+
+        [id="image-theme-button"] {
+            background-image: url(https://raw.githubusercontent.com/DTACat/Collectibles/page/main/assets/image-theme-preview.png);
+            border: 5px solid rgb(89, 102, 243);
+        }
+        [id="image-theme-button"]:hover {
+            background-image: url(https://raw.githubusercontent.com/DTACat/Collectibles/page/main/assets/image-theme-preview.png);
+            border: 5px solid rgb(71, 81, 192);
+        }
+        .background-theme-image [id="image-theme-button"] {
+            border: 5px solid rgb(5, 129, 75);
+        }
+        .background-theme-image [id="image-theme-button"]:hover {
+            border: 5px solid rgb(7, 88, 53);
+        }
+
+        .theme-button-selected {
+            border: 5px solid rgb(5, 129, 75);
+        }
+
+        [id="youtube-button"] {
+            width: 65px;
+            height: 50px;
+        }
+        [id="github-button"] {
+            width: 65px;
+            height: 50px;
+        }
+
+        [class*="category-price"] {
+            display: none;
+        }
+
+
+        div.bundles-hidden [class*="bundle"] {
+            display: none;
+        }
+        div.deco-hidden [class*="decos"] {
+            display: none;
+        }
+        div.effect-hidden [class*="effects"] {
+            display: none;
+        }
+        .unpub-hidden [class*="unpublished"] {
+            display: none;
+        }
+        .in-shop [class*="in-shop"] {
+            display: none;
+        }
+        .banners-hidden [class*="banner"] {
+            display: none;
+        }
+        .pphidden2 [class*="pphidden"] {
+            display: none;
+        }
+        .pprecenthidden2 [class*="pprecenthidden"] {
+            display: none;
+        }
+        .unobtainable-tag-hidden .unobtainable-tag {
+            display: none;
+        }
+        .unobtainable-tag-hidden .unobtainable-warning {
+            display: none;
+        }
+        .pending-hidden .pp-pending-card {
+            display: none;
+        }
+        [class*="paper-beach-hidden"] {
+            display: none;
+        }
+        .paper-beach-show [class*="paper-beach-hidden"] {
+            display: block;
+        }
+        [class*="windowkill-v2-hidden"] {
+            display: none;
+        }
+        .windowkill-v2-show [class*="windowkill-v2-hidden"] {
+            display: block;
+        }
+
+
+        .padding1 {
+            padding: 1em;
+        }
+        .right {
+            margin-right: auto;
+        }
+        .hidden {
+            display: none;
+        }
+        .inv {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1>Error 404</h1>
+        
+        <h1>Page Not Found</h1>
+
+        <h2>The page you’re looking for doesn’t exist.</h2>
+
+    <script>
+
+        // Set the date we're counting down to
+        var countDownDate = new Date("Oct 1, 2024 00:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+        // Display the result in the element with id="demo"
+        document.getElementById("paper-beach-countdown").innerHTML = days + " DAYS LEFT TO REQUEST";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("paper-beach-countdown").innerHTML = "Nothing better than wet and sandy paper.";
+        }
+        }, 1000);
+
+        document.querySelectorAll(".copy-link").forEach((copyLinkParent) => {
+            const inputField = copyLinkParent.querySelector(".copy-pp");
+            const copyButton = copyLinkParent.querySelector(".button-pp");
+            const text = inputField.value;
+
+            inputField.addEventListener("focus", () => inputField.select());
+
+            copyButton.addEventListener("click", () => {
+                inputField.select();
+                navigator.clipboard.writeText(text);
+
+                inputField.value = "Copied!";
+                setTimeout(() => (inputField.value = text), 2000);
+            });
+        });
+
+
+        function dynamicOneTwo() {
+            let banner1 = document.getElementById('dynamicbanner1');
+            let banner2 = document.getElementById('dynamicbanner2');
+
+            if (banner1.classList.contains('dynamicbanner1')) {
+                banner1.classList.add('hidden');
+            }
+
+            if (banner2.classList.contains('dynamicbanner2')) {
+                banner2.classList.remove('hidden');
+            }
+        }
+
+        function dynamicTwoThree() {
+            let banner2 = document.getElementById('dynamicbanner2');
+            let banner3 = document.getElementById('dynamicbanner3');
+
+            if (banner2.classList.contains('dynamicbanner2')) {
+                banner2.classList.add('hidden');
+            }
+
+            if (banner3.classList.contains('dynamicbanner3')) {
+                banner3.classList.remove('hidden');
+            }
+        }
+
+        function dynamicThreeFour() {
+            let banner3 = document.getElementById('dynamicbanner3');
+            let banner4 = document.getElementById('dynamicbanner4');
+
+            if (banner3.classList.contains('dynamicbanner3')) {
+                banner3.classList.add('hidden');
+            }
+
+            if (banner4.classList.contains('dynamicbanner4')) {
+                banner4.classList.remove('hidden');
+            }
+        }
+
+        function dynamicFourOne() {
+            let banner4 = document.getElementById('dynamicbanner4');
+            let banner1 = document.getElementById('dynamicbanner1');
+
+            if (banner4.classList.contains('dynamicbanner4')) {
+                banner4.classList.add('hidden');
+            }
+
+            if (banner1.classList.contains('dynamicbanner1')) {
+                banner1.classList.remove('hidden');
+            }
+        }
+
+
+        function toggleDevTools() {
+            let tools = document.getElementById('dev-tools');
+            let button = document.getElementById('devtools-button');
+            let button_ = document.getElementById('devtools-button-real');
+
+            if (tools.classList.contains('hidden')) {
+                tools.classList.remove('hidden');
+            } else {
+                tools.classList.add('hidden');
+            }
+
+            if (button_.classList.contains('server-button-blue')) {
+                button_.classList.remove('server-button-blue');
+            } else {
+                button_.classList.add('server-button-blue');
+            }
+        }
+
+        function dev() {
+            let devbutton = document.getElementById('devtools-button-real');
+            let exp = document.getElementById('experiments');
+            let exp1 = document.getElementById('theme-exp');
+            let staf = document.getElementById('staff-popup');
+
+            devbutton.classList.remove('hidden');
+            exp.classList.remove('hidden');
+            exp1.classList.remove('hidden');
+            staf.classList.remove('hidden');
+            setTimeout(() => {  staf.classList.add('hidden'); }, 10000);
+        }
+
+        function toggleDevTools403() {
+            let tools = document.getElementById('dev-tools-403');
+            let button = document.getElementById('devtools-button');
+
+            if (tools.classList.contains('hidden')) {
+                tools.classList.remove('hidden');
+                setTimeout(() => {  tools.classList.add('hidden'); }, 100);
+                
+            } else {
+                tools.classList.add('hidden');
+            }
+
+            if (button.classList.contains('server-button-blue')) {
+                button.classList.remove('server-button-blue');
+            } else {
+                button.classList.add('server-button-blue');
+                console.log("403 (Forbidden)");
+                setTimeout(() => {  button.classList.remove('server-button-blue'); }, 100);
+            }
+        }
+
+        function toggleBundles() {
+            let bundles = document.getElementById('main-thing');
+            let button = document.getElementById('bundles-button');
+
+            if (bundles.classList.contains('bundles-hidden')) {
+                bundles.classList.remove('bundles-hidden');
+            } else {
+                bundles.classList.add('bundles-hidden');
+            }
+
+            if (button.classList.contains('server-button-blue')) {
+                button.classList.remove('server-button-blue');
+            } else {
+                button.classList.add('server-button-blue');
+            }
+        }
+
+        function toggleDeco() {
+            let deco = document.getElementById('main-thing');
+            let button = document.getElementById('deco-button');
+
+            if (deco.classList.contains('deco-hidden')) {
+                deco.classList.remove('deco-hidden');
+            } else {
+                deco.classList.add('deco-hidden');
+            }
+
+            if (button.classList.contains('server-button-blue')) {
+                button.classList.remove('server-button-blue');
+            } else {
+                button.classList.add('server-button-blue');
+            }
+        }
+
+        function toggleEffects() {
+            let effects = document.getElementById('main-thing');
+            let button = document.getElementById('effects-button');
+
+            if (effects.classList.contains('effect-hidden')) {
+                effects.classList.remove('effect-hidden');
+            } else {
+                effects.classList.add('effect-hidden');
+            }
+
+            if (button.classList.contains('server-button-blue')) {
+                button.classList.remove('server-button-blue');
+            } else {
+                button.classList.add('server-button-blue');
+            }
+        }
+
+        function toggleUnpublished() {
+            let unpub = document.getElementById('main-thing');
+            let button = document.getElementById('unpublished-button');
+
+            if (unpub.classList.contains('unpub-hidden')) {
+                unpub.classList.remove('unpub-hidden');
+            } else {
+                unpub.classList.add('unpub-hidden');
+            }
+
+            if (button.classList.contains('server-button-blue')) {
+                button.classList.remove('server-button-blue');
+            } else {
+                button.classList.add('server-button-blue');
+            }
+        }
+
+        function toggleInShop() {
+            let inshop = document.getElementById('main-thing');
+            let button = document.getElementById('in-shop-button');
+
+            if (inshop.classList.contains('in-shop')) {
+                inshop.classList.remove('in-shop');
+            } else {
+                inshop.classList.add('in-shop');
+            }
+
+            if (button.classList.contains('server-button-blue')) {
+                button.classList.remove('server-button-blue');
+            } else {
+                button.classList.add('server-button-blue');
+            }
+        }
+
+        function toggleBanners() {
+            let banner = document.getElementById('main-thing');
+            let button = document.getElementById('banner-button');
+
+            if (banner.classList.contains('banners-hidden')) {
+                banner.classList.remove('banners-hidden');
+            } else {
+                banner.classList.add('banners-hidden');
+            }
+
+            if (button.classList.contains('server-button-blue')) {
+                button.classList.remove('server-button-blue');
+            } else {
+                button.classList.add('server-button-blue');
+            }
+        }
+
+        function toggleDynamicBanners() {
+            let banners = document.getElementById('dynamicbanners');
+            let button = document.getElementById('dynamic-button');
+
+            if (banners.classList.contains('hidden')) {
+                banners.classList.remove('hidden');
+            } else {
+                banners.classList.add('hidden');
+            }
+
+            if (button.classList.contains('server-button-blue')) {
+                button.classList.remove('server-button-blue');
+            } else {
+                button.classList.add('server-button-blue');
+            }
+        }
+
+        function toggleSettings() {
+            let bundles = document.getElementById('settings-menu');
+            let button = document.getElementById('settings-button');
+
+            if (bundles.classList.contains('hidden')) {
+                bundles.classList.remove('hidden');
+            } else {
+                bundles.classList.add('hidden');
+            }
+
+            if (button.classList.contains('server-button-blue')) {
+                button.classList.remove('server-button-blue');
+            } else {
+                button.classList.add('server-button-blue');
+            }
+        }
+
+        function toggleCardTheme() {
+            let cards = document.getElementById('main-thing');
+            let button = document.getElementById('card-theme-button');
+
+            if (cards.classList.contains('no-card-theme')) {
+                cards.classList.remove('no-card-theme');
+            } else {
+                cards.classList.add('no-card-theme');
+            }
+
+            if (button.classList.contains('server-button-blue')) {
+                button.classList.remove('server-button-blue');
+            } else {
+                button.classList.add('server-button-blue');
+            }
+        }
+
+
+
+        function togglePPlus() {
+            let profilesplus = document.getElementById('profilesplus');
+            let button = document.getElementById('pplus-button');
+
+            if (profilesplus.classList.contains('hidden')) {
+                profilesplus.classList.remove('hidden');
+            } else {
+                profilesplus.classList.add('hidden');
+            }
+
+            if (button.classList.contains('server-button-blue')) {
+                button.classList.remove('server-button-blue');
+            } else {
+                button.classList.add('server-button-blue');
+            }
+        }
+
+        function toggleUnreleasedPPlus() {
+            let profilesplus = document.body;
+            let button = document.getElementById('unrepp-button');
+
+            if (profilesplus.classList.contains('pphidden2')) {
+                profilesplus.classList.remove('pphidden2');
+            } else {
+                profilesplus.classList.add('pphidden2');
+            }
+
+            if (button.classList.contains('server-button-blue')) {
+                button.classList.remove('server-button-blue');
+            } else {
+                button.classList.add('server-button-blue');
+            }
+        }
+
+        function toggleUnobtainableTag() {
+            let unobtainable = document.getElementById('main-thing');
+            let button = document.getElementById('unobtainable-tag-button');
+
+            if (unobtainable.classList.contains('unobtainable-tag-hidden')) {
+                unobtainable.classList.remove('unobtainable-tag-hidden');
+            } else {
+                unobtainable.classList.add('unobtainable-tag-hidden');
+            }
+
+            if (button.classList.contains('server-button-blue')) {
+                button.classList.remove('server-button-blue');
+            } else {
+                button.classList.add('server-button-blue');
+            }
+        }
+
+        function togglePPlusQuickColours() {
+            let quickcolours = document.getElementById('main-thing');
+            let button = document.getElementById('quickcolours-button');
+
+            if (quickcolours.classList.contains('pplusquickcoloursshown')) {
+                quickcolours.classList.remove('pplusquickcoloursshown');
+            } else {
+                quickcolours.classList.add('pplusquickcoloursshown');
+            }
+
+            if (button.classList.contains('server-button-blue')) {
+                button.classList.remove('server-button-blue');
+            } else {
+                button.classList.add('server-button-blue');
+            }
+        }
+
+        function togglePPlusPending() {
+            let pending = document.getElementById('main-thing');
+            let button = document.getElementById('pplus-hide-pending-button');
+
+            if (pending.classList.contains('pending-hidden')) {
+                pending.classList.remove('pending-hidden');
+            } else {
+                pending.classList.add('pending-hidden');
+            }
+
+            if (button.classList.contains('server-button-blue')) {
+                button.classList.remove('server-button-blue');
+            } else {
+                button.classList.add('server-button-blue');
+            }
+        }
+
+        function paperBeachPPlus() {
+            let main = document.body;
+            let button = document.getElementById('paper-beach-experiment-button');
+
+            if (main.classList.contains('paper-beach-show')) {
+                main.classList.remove('paper-beach-show');
+            } else {
+                main.classList.add('paper-beach-show');
+            }
+
+            if (button.classList.contains('server-button-blue')) {
+                button.classList.remove('server-button-blue');
+            } else {
+                button.classList.add('server-button-blue');
+            }
+        }
+
+        function windowKillV2PPlus() {
+            let main = document.body;
+            let button = document.getElementById('windowkill-v2-experiment-button');
+
+            if (main.classList.contains('windowkill-v2-show')) {
+                main.classList.remove('windowkill-v2-show');
+            } else {
+                main.classList.add('windowkill-v2-show');
+            }
+
+            if (button.classList.contains('server-button-blue')) {
+                button.classList.remove('server-button-blue');
+            } else {
+                button.classList.add('server-button-blue');
+            }
+        }
+        
+        document.body.className = localStorage.theme || "darkmode";
+
+        let body_main = document.body;
+        body_main.classList.add('paper-beach-show');
+        body_main.classList.add('pphidden2');
+
+        document.getElementById("light-theme-button").addEventListener("click", e => {
+            document.body.className = "background-light";
+            localStorage.theme = "background-light";
+        });
+
+        document.getElementById("theme-reset-button").addEventListener("click", e => {
+            document.body.className = "darkmode";
+            localStorage.theme = "darkmode";
+        });
+
+        document.getElementById("dark-theme-button").addEventListener("click", e => {
+            document.body.className = "darkmode";
+            localStorage.theme = "darkmode";
+        });
+
+        document.getElementById("darker-theme-button").addEventListener("click", e => {
+            document.body.className = "background-darker";
+            localStorage.theme = "background-darker";
+        });
+
+        document.getElementById("black-theme-button").addEventListener("click", e => {
+            document.body.className = "background-black";
+            localStorage.theme = "background-black";
+        });
+
+        document.getElementById("red-theme-button").addEventListener("click", e => {
+            document.body.className = "background-theme-red";
+            localStorage.theme = "background-theme-red";
+        });
+
+        document.getElementById("blue-theme-button").addEventListener("click", e => {
+            document.body.className = "background-theme-blue";
+            localStorage.theme = "background-theme-blue";
+        });
+
+        document.getElementById("image-theme-button").addEventListener("click", e => {
+            document.body.className = "background-theme-image";
+            localStorage.theme = "background-theme-image";
+        });
+
+        document.getElementById("dynamic-theme-button").addEventListener("click", e => {
+            document.body.className = "background-dynamic";
+            localStorage.theme = "background-dynamic";
+        });
+    </script>
+</body>
+
+</html>
