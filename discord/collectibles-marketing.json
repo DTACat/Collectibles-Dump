@@ -2,6 +2,24 @@
     "marketings": {
         "0": {
             "type": 0,
+            "version": 2,
+            "title": "Check out new Dojo arrivals",
+            "body": null,
+            "avatar": "https://cdn.discordapp.com/assets/collectibles/avatar/phibi.png",
+            "decorations": [
+                "a_3d1e6078b2e4c8865e0ad0f429d651b1",
+                "a_13913a00bd9990ab4102a3bf069f0f3f",
+                "a_7cf09c7e78d6eb35ae354acc1d5cc676"
+            ],
+            "dismissible_content": 431,
+            "ref_target_background": null
+        }
+    }
+},
+{
+    "marketings": {
+        "0": {
+            "type": 0,
             "version": 1,
             "title": "VALORANT\u2019s Back",
             "body": "Yoru, Viper, Cypher and a lil something extra. Come and see.",
